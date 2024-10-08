@@ -5,7 +5,7 @@ export default function Home() {
 	const [splitHeader, setSplitHeader] = useState<string[]>([]);
 
 	useEffect(() => {
-		const headerText = "Habit Heroes";
+		const headerText = "Wellness Warriors";
 		const splitText = headerText.split("");
 
 		setSplitHeader(splitText);
@@ -40,7 +40,7 @@ export default function Home() {
 					<div className={`${styles.addExerciseBox} ${styles.button}`}></div>
 				</div>
 
-				
+
 			</div>
 		</div>
 	);
