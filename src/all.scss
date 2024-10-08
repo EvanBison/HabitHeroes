@@ -1,0 +1,20 @@
+:root {
+    --background: #1f1f1f;
+    --main: transparent;
+    --secondary: #436d47;
+    --textColor: white;
+    --sliderOff: darkred;
+    --sliderOn: green;
+    --sliderTab: white;
+    --pfpColor: transparent;
+}
+
+body {
+    margin: 0;
+    overflow: none;
+    width: 98vw;
+    height: 100vh;
+    background: var(--background);
+    font-family: tahoma;
+    color: var(--textColor);
+}
