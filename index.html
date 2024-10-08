@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawsitive Progress</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="title" id="title">
+        <h1 id="header">Pawsitive Progress</h1>
+    </div>
+    <div class="pageContainer">
+       <div class="leftBox profile">
+            <div class="pfp">
+                <div class="image">
+                    <p>Picture</p>
+                </div>
+                <p class="name">username</p>
+            </div>
+            <div class="badges"></div>
+            <div class="info"></div>
+       </div>
+       <div class="midBox">
+            <div class="questBox button">
+
+            </div>
+            <div class="battleBox button">
+
+            </div>
+            <div class="chatBox button">
+
+            </div>
+            <div class="healthBox button">
+
+            </div>
+            <div class="timeTrialBox button">
+
+            </div>
+            <div class="addExerciseBox button">
+
+            </div>
+       </div>
+       <div class="rightTopBox">
+            <h1>Settings</h1>
+            <div class="settings">
+                <div>
+                    <p>Effects</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Sound</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Music</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Light</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Hints</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Weight</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Auto&nbsp;Save</p>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Check&nbsp;In</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <div>
+                    <p>Notifs</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+       </div>
+       <div class="rightBottomBox"> 
+            <p>Creators: name, name, name</p>
+       </div>
+    </div>
+    
+
+    <script>
+        let header = document.getElementById("header");
+        let splitHeader = header.innerText.split("");
+        document.getElementById("title").innerHTML="";
+        for(let i=0; i<splitHeader.length; i++) {
+            let newH = document.createElement("h1");
+            if(splitHeader[i]==" ") {
+                newH.innerText="-";
+            } else {
+                newH.innerText=splitHeader[i];
+            }
+            newH.classList.add("bubble")
+            document.getElementById("title").appendChild(newH);
+        }
+    </script>
+</body>
+</html>
