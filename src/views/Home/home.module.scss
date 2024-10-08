@@ -26,7 +26,7 @@
 }
 
 .leftBox {
-    grid-column: 1/4;
+    grid-column: 1/2;
     grid-row: 1/10;
     background: var(--main);
 }
@@ -84,7 +84,7 @@
     display: grid;
     grid-auto-columns: auto;
     grid-auto-rows: auto;
-    grid-column: 4/8;
+    grid-column: 2/3;
     grid-row: 1/10;
     background: var(--main);
     grid-gap: 2%;
@@ -129,110 +129,6 @@
     grid-column: 1/3;
     grid-row: 5/6;
     background: var(--secondary);
-}
-
-
-.rightTopBox {
-    grid-column: 8/10;
-    grid-row: 1/6;
-    background: var(--main);
-    text-align: center;
-    color: var(--textColor);
-    padding: 5px;
-    display: grid;
-    grid-auto-columns: auto;
-    grid-auto-rows: auto;
-}
-
-.rightTopBox>h1 {
-    grid-column: 1/3;
-    grid-row: 1/2;
-}
-
-.settings {
-    background: var(--secondary);
-    border-radius: 15px;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column: 1/3;
-    grid-row: 2/10;
-    grid-gap: 1%;
-    max-width: 100%;
-}
-
-.settings>div>p {
-    font-size: 1.2cqw;
-    white-space: nowrap;
-}
-
-.settings>div {
-    border-radius: 15px;
-    background: var(--background);
-    align-items: center;
-}
-
-
-
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-}
-
-.switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: var(--sliderOff);
-    -webkit-transition: .4s;
-    transition: .4s;
-	border-radius: 34px;
-}
-
-.slider:hover {
-    transform: scale(1.05);
-}
-
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: var(--sliderTab);
-    -webkit-transition: .4s;
-    transition: .4s;
-	border-radius: 50%;
-}
-
-input:checked+.slider {
-    background-color: var(--sliderOn);
-}
-
-input:checked+.slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-}
-
-.rightBottomBox {
-    grid-column: 8/10;
-    grid-row: 6/10;
-    background: var(--main);
-    padding: 5px;
 }
 
 .button {

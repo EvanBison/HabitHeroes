@@ -7,6 +7,7 @@ export default function Home() {
 	useEffect(() => {
 		const headerText = "Pawsitive Progress";
 		const splitText = headerText.split("");
+
 		setSplitHeader(splitText);
 	}, []);
 
@@ -38,23 +39,8 @@ export default function Home() {
 					<div className={`${styles.timeTrialBox} ${styles.button}`}></div>
 					<div className={`${styles.addExerciseBox} ${styles.button}`}></div>
 				</div>
-				<div className={styles.rightTopBox}>
-					<h1>Settings</h1>
-					<div className={styles.settings}>
-						{["Effects", "Sound", "Music", "Light", "Hints", "Weight", "Auto Save", "Check In", "Notifs"].map((setting, index) => (
-							<div key={index}>
-								<p>{setting}</p>
-								<label className={styles.switch}>
-									<input type="checkbox" defaultChecked={setting !== "Light" && setting !== "Weight" && setting !== "Check In"} />
-									<span className={styles.slider}></span>
-								</label>
-							</div>
-						))}
-					</div>
-				</div>
-				<div className={styles.rightBottomBox}>
-					<p>Creators: name, name, name</p>
-				</div>
+
+				
 			</div>
 		</div>
 	);
