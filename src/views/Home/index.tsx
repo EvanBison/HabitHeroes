@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'react';
-import styles from './home.module.scss';
+import { useEffect, useState } from "react";
+import styles from "./home.module.scss";
 
 export default function Home() {
 	const [splitHeader, setSplitHeader] = useState<string[]>([]);
 
 	useEffect(() => {
-		const headerText = "Pawsitive Progress";
+		const headerText = "Habit Heroes";
 		const splitText = headerText.split("");
 
 		setSplitHeader(splitText);
