@@ -21,17 +21,18 @@ export default function Home() {
 				))}
 			</div>
 			<div className={styles.pageContainer}>
-				<div className={`${styles.leftBox} ${styles.profile}`}>
-					<div className={styles.pfp}>
-						<div className={styles.image}>
-							<p>Picture</p>
-						</div>
-						<p className={styles.name}>username</p>
+				<div className={styles.leftBox}>
+					<div className={styles.guildBox}>
+
 					</div>
-					<div className={styles.badges}></div>
-					<div className={styles.info}></div>
+					<div className={styles.playerBox}>
+
+					</div>
+					<div className={styles.bottomBox}>
+
+					</div>
 				</div>
-				<div className={styles.midBox}>
+				<div className={styles.rightBox}>
 					<div className={`${styles.questBox} ${styles.button}`}></div>
 					<div className={`${styles.battleBox} ${styles.button}`}></div>
 					<div className={`${styles.chatBox} ${styles.button}`}></div>
