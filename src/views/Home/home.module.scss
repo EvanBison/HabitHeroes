@@ -75,8 +75,22 @@
     grid-column:1/4;
     text-align: left;
 }
-.stat {
+.stat:before {
     color:red;
+}
+
+
+progress {
+    /* style rules */
+}
+progress::-webkit-progress-bar {
+/* style rules */
+}
+progress::-webkit-progress-value {
+/* style rules */
+}
+progress::-moz-progress-bar {
+/* style rules */
 }
 
 

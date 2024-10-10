@@ -36,7 +36,7 @@ export default function Home() {
 							<div>b6</div>
 						</div>
 						<div className={styles.stats}>
-							<p className={styles.stat}>g</p>
+							<p className={styles.stat}>Level:3</p>
 						</div>
 					</div>
 					<div className={styles.bottomBox}>
