@@ -23,10 +23,21 @@ export default function Home() {
 			<div className={styles.pageContainer}>
 				<div className={styles.leftBox}>
 					<div className={styles.guildBox}>
-
+						<p className={styles.name}>Guild Name</p>
 					</div>
 					<div className={styles.playerBox}>
-
+						<p className={styles.name}>Player Name</p>
+						<div className={styles.badges}>
+							<div>b1</div>
+							<div>b2</div>
+							<div>b3</div>
+							<div>b4</div>
+							<div>b5</div>
+							<div>b6</div>
+						</div>
+						<div className={styles.stats}>
+							<p className={styles.stat}>g</p>
+						</div>
 					</div>
 					<div className={styles.bottomBox}>
 

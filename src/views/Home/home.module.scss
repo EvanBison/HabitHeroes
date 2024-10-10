@@ -34,11 +34,13 @@
     padding: 10px;
     grid-gap: 2%;
     background: var(--main);
+    text-align: center;
 }
 
 .leftBox > div {
     background:var(--secondary);
     border-radius: 15px;
+    padding:5px;
 }
 
 .guildBox {
@@ -46,12 +48,35 @@
     grid-row:1/8;
 }
 .playerBox {
+    display:grid;
+    grid-auto-rows:auto;
+    grid-auto-columns:auto;
     grid-column: 2/3;
     grid-row:1/8;
 }
 .bottomBox {
     grid-column: 1/3;
     grid-row:8/10
+}
+
+.name {
+    font-size: 2em;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.badges {
+    display:grid;
+    grid-template-columns:auto auto auto;
+    grid-template-rows: auto auto;
+    grid-row: 1/2;
+}
+.stats {
+    grid-row:2/6;
+    grid-column:1/4;
+    text-align: left;
+}
+.stat {
+    color:red;
 }
 
 
