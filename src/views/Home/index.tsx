@@ -35,8 +35,12 @@ export default function Home() {
 							<div>b5</div>
 							<div>b6</div>
 						</div>
+						<div className={styles.lvlBar}>
+							<p className={styles.level}>Level:3</p>
+							<progress value="40" max="100"></progress>
+						</div>
 						<div className={styles.stats}>
-							<p className={styles.stat}>Level:3</p>
+							
 						</div>
 					</div>
 					<div className={styles.bottomBox}>
@@ -44,12 +48,24 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.rightBox}>
-					<div className={`${styles.questBox} ${styles.button}`}></div>
-					<div className={`${styles.battleBox} ${styles.button}`}></div>
-					<div className={`${styles.chatBox} ${styles.button}`}></div>
-					<div className={`${styles.healthBox} ${styles.button}`}></div>
-					<div className={`${styles.timeTrialBox} ${styles.button}`}></div>
-					<div className={`${styles.addExerciseBox} ${styles.button}`}></div>
+					<div className={`${styles.questBox} ${styles.button}`}>
+						<h1>Train</h1>
+					</div>
+					<div className={`${styles.battleBox} ${styles.button}`}>
+						<h1>Daily</h1>
+					</div>
+					<div className={`${styles.chatBox} ${styles.button}`}>
+						<h1>Timed</h1>
+					</div>
+					<div className={`${styles.healthBox} ${styles.button}`}>
+						<h1>Exercise</h1>
+					</div>
+					<div className={`${styles.timeTrialBox} ${styles.button}`}>
+						<h1>Progress</h1>
+					</div>
+					<div className={`${styles.addExerciseBox} ${styles.button}`}>
+						<h1>Settings</h1>
+					</div>
 				</div>
 
 
