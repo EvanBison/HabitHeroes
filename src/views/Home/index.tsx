@@ -26,7 +26,7 @@ export default function Home() {
 						<p className={styles.name}>Guild Name</p>
 					</div>
 					<div className={styles.playerBox}>
-						<p className={styles.name}>Player Name</p>
+						<p className={styles.name}>Player Name<p className={styles.gold}>Gold: 453</p></p>
 						<div className={styles.badges}>
 							<div>b1</div>
 							<div>b2</div>
@@ -40,7 +40,12 @@ export default function Home() {
 							<progress value="40" max="100"></progress>
 						</div>
 						<div className={styles.stats}>
-							
+							<p>Stamina: 54</p>
+							<p>Discipline: 45</p>
+							<p>Strength: 89</p>
+							<p>Health: 73</p>
+							<p>Agility: 23</p>
+							<p>Dexterity: 67</p>
 						</div>
 					</div>
 					<div className={styles.bottomBox}>
