@@ -1,10 +1,20 @@
+import { useNavigate } from 'react-router-dom';
+import { Tooltip } from 'react-tooltip'
 import styles from "./account.module.scss";
 
 export default function Account() {
+	const navigate = useNavigate();
+	const goToHome = () => {
+        navigate('/');
+    };
 	return (
 		<>
 			<div className={styles.rightTopBox}>
 				<h1>Settings</h1>
+				<Tooltip className="tooltip" id="menu">Navigate to Menu</Tooltip>
+				<div className="homeButton" onClick={goToHome} data-tooltip-id='menu'>
+					<div /> <div /> <div />	
+				</div>
 				<div className={styles.settings}>
 					{["Effects", "Sound", "Music", "Light", "Hints", "Weight", "Auto Save", "Check In", "Notifs"].map((setting, index) => (
 						<div key={index}>

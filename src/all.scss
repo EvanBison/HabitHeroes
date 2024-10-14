@@ -3,6 +3,7 @@
     --main: transparent;
     --secondary: #436d47;
     --textColor: white;
+    --menuColor: white;
     --sliderOff: darkred;
     --sliderOn: green;
     --sliderTab: white;
@@ -10,6 +11,7 @@
     --progressValue: #FFED66;
     --progressBg: #2b2b35;
     --progressBorder: black;
+    --tooltip-bg: #436d47;
 }
 
 body {
@@ -22,3 +24,24 @@ body {
     color: var(--textColor);
 }
 
+.homeButton {
+    display: inline-block;
+    cursor: pointer;
+    position:absolute;
+    left:0;
+    top:0;
+    margin:5px;
+    user-select: none;
+}
+.homeButton > div {
+    width: 35px;
+    height: 5px;
+    background-color: var(--menuColor);
+    margin: 6px 0;
+}
+
+.tooltip {
+    background-color:var(--tooltip-bg)!important;
+    color:var(--textColor)!important;
+    user-select: none!important;
+}

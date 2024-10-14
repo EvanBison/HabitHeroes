@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import styles from "./home.module.scss";
 
 export default function Home() {
+	const navigate = useNavigate();
 	const [splitHeader, setSplitHeader] = useState<string[]>([]);
+
+	const goToAccount = () => {
+        navigate('/account');
+    };
 
 	useEffect(() => {
 		const headerText = "Wellness Warriors";
@@ -69,7 +75,7 @@ export default function Home() {
 						<h1>Progress</h1>
 					</div>
 					<div className={`${styles.addExerciseBox} ${styles.button}`}>
-						<h1>Settings</h1>
+						<h1 onClick={goToAccount}>Account</h1>
 					</div>
 				</div>
 
