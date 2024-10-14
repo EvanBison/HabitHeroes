@@ -74,8 +74,8 @@ export default function Home() {
 					<div className={`${styles.timeTrialBox} ${styles.button}`}>
 						<h1>Progress</h1>
 					</div>
-					<div className={`${styles.addExerciseBox} ${styles.button}`}>
-						<h1 onClick={goToAccount}>Account</h1>
+					<div className={`${styles.addExerciseBox} ${styles.button}`} onClick={goToAccount}>
+						<h1>Account</h1>
 					</div>
 				</div>
 
