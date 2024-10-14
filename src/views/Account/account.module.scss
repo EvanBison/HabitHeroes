@@ -1,8 +1,14 @@
 body {
     text-align: center;
+    overflow-x: hidden;
 }
 
-.settingsDiv {
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.settings {
     background: var(--secondary);
     border-radius: 15px;
     padding: 10px;
@@ -11,6 +17,8 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1%;
+    justify-content: center;
+    margin-bottom: 1%;
 }
 
 .settings>div>p {
