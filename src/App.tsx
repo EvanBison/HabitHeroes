@@ -8,7 +8,11 @@ import {
 const router = createBrowserRouter([{
 	id: "app",
 	// errorElement: <Error code={0} />,
-	element: <Outlet />,
+	element: <>
+			<div className='brightnessOverlay'></div>
+			<div id="hueOverlay" className='hueOverlay'></div>
+			<Outlet />
+	</>,
 	children: [
 		{
 			id: "home",
