@@ -16,12 +16,17 @@
     --slider-thumb: white;
 
     --brightness: 100;
-    --colorAdjustment: hsl(0, 100, 50);
+    --colorAdjustment: 0;
+    --grayscale:0;
+}
+
+* {
+    filter: hue-rotate(var(--colorAdjustment)) grayscale(var(--grayscale));
 }
 
 body {
     margin: 0;
-    overflow: none;
+    overflow-x: hidden;
     width: 98vw;
     height: 100vh;
     background: var(--background);
@@ -40,18 +45,7 @@ body {
     pointer-events: none;
     z-index: 1000;
 }
-.hueOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--colorAdjustment);
-    transition: 0.3s ease; 
-    mix-blend-mode: hue; 
-    pointer-events: none;
-    z-index: 999;
-}
+
 
 .homeButton {
     display: inline-block;

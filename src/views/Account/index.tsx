@@ -19,6 +19,12 @@ export default function Account() {
 
 		return savedColorAdjustment ? Number(savedColorAdjustment) : 0; // default 0
 	});
+	const [grayscale, setGrayscale] = useState<number>(() => { 
+		const savedGrayscale = localStorage.getItem("pageGrayscale");
+
+		return savedGrayscale ? Number(savedGrayscale) : 0; // default 0
+	});
+	
 	
 	//change 
 	useEffect(() => {
@@ -27,9 +33,14 @@ export default function Account() {
 	}, [brightness]);
 
 	useEffect(() => {
-		document.documentElement.style.setProperty('--colorAdjustment', `hsl(${colorAdjustment}deg, 50%, 50%)`);
+		document.documentElement.style.setProperty('--colorAdjustment', `${colorAdjustment}deg`);
 		localStorage.setItem('pageColorAdjustment', String(colorAdjustment));
 	}, [colorAdjustment]);
+
+	useEffect(() => {
+		document.documentElement.style.setProperty('--grayscale', `${grayscale}%`);
+		localStorage.setItem('pageGrayscale', String(grayscale));
+	}, [grayscale]);
 
 	return (
 		<>
@@ -58,17 +69,27 @@ export default function Account() {
 							min={10}
 							max={100} 
 							className="slider" 
-							value={brightness} 
+							value={brightness}
+							step="1"
 							onChange={e => setBrightness(Number(e.target.value))} />
 					</div>
 					<div>
 						<p>Color Adjustment</p>
 						<input type="range"
 							min={0}
-							max={360} 
+							max={45} 
 							className="slider" 
 							value={colorAdjustment} 
 							onChange={e => setColorAdjustment(Number(e.target.value))} />
+					</div>
+					<div>
+						<p>Grayscale</p>
+						<input type="range"
+							min={0}
+							max={50} 
+							className="slider" 
+							value={grayscale} 
+							onChange={e => setGrayscale(Number(e.target.value))} />
 					</div>
 				</div>
 				<p>Creators: name, name, name</p>

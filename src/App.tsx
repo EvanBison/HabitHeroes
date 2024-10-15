@@ -10,7 +10,6 @@ const router = createBrowserRouter([{
 	// errorElement: <Error code={0} />,
 	element: <>
 			<div className='brightnessOverlay'></div>
-			<div id="hueOverlay" className='hueOverlay'></div>
 			<Outlet />
 	</>,
 	children: [
