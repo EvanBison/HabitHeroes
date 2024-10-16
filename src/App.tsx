@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
 
 import {
 	Account,
-	Home
+	Home,
+	Train
 } from "./views";
 
 const router = createBrowserRouter([{
@@ -22,6 +23,11 @@ const router = createBrowserRouter([{
 			id: "account",
 			path: "/account",
 			element: <Account />
+		},
+		{
+			id: "train",
+			path: "/train",
+			element: <Train />
 		}
 	]
 }]);

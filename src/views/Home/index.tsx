@@ -9,6 +9,10 @@ export default function Home() {
 	const goToAccount = () => {
         navigate('/account');
     };
+	const goToTrain = () => {
+        navigate('/train');
+    };
+
 
 	useEffect(() => {
 		const headerText = "Wellness Warriors";
@@ -59,7 +63,7 @@ export default function Home() {
 					</div>
 				</div>
 				<div className={styles.rightBox}>
-					<div className={`${styles.questBox} ${styles.button}`}>
+					<div className={`${styles.questBox} ${styles.button}`} onClick={goToTrain}>
 						<h1>Train</h1>
 					</div>
 					<div className={`${styles.battleBox} ${styles.button}`}>

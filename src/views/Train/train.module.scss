@@ -1,0 +1,70 @@
+body {
+    overflow-x: hidden;
+}
+
+.header {
+    font-size: 3em;
+}
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.contents {
+    display: flex;
+    gap:2%;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    height:80vh;
+    width:100%;
+    border-radius: 10px;
+}
+.contents > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary);
+    width: 100%;
+    height: 100%;
+
+}
+
+table {
+    border-radius: 15px;
+}
+table, th, td {
+    border: 3px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+    padding:1em;
+}
+
+
+tr:nth-child(odd) {
+    background-color: var(--tableColumnOdd);
+}
+tr:nth-child(even) {
+    background-color: var(--background);
+}
+tr:nth-child(1) {
+    background: var(--tableRowOne);
+}
+
+th>button {
+    transition: ease .2s;
+    width:5em;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
+    border: 3px solid black;
+}
+th>button:hover {
+    transition: ease .2s;
+    transform: scale(1.05) rotate(10deg);
+}
+th:nth-child(odd)>button {
+    background-color: var(--sliderOff);
+}
+th:nth-child(even)>button {
+    background-color: var(--sliderOn);
+}

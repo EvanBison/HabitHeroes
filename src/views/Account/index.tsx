@@ -47,7 +47,7 @@ export default function Account() {
 
 			<div className={styles.container}>
 				<h1>Settings</h1>
-				<Tooltip className="tooltip" id="menu">Navigate to Menu</Tooltip>
+				<Tooltip className="tooltip" id="menu" place='right'>Navigate to Menu</Tooltip>
 				<div className="homeButton" onClick={goToHome} data-tooltip-id='menu'>
 					<div /> <div /> <div />	
 				</div>
